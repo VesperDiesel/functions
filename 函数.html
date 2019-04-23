@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      // 1.写一个函数，实现对数字数组的排序。
+
+      function sortArray (arr) {
+          for (var i = 0; i < arr.length - 1; i++) {
+              for (var j = 0; j < arr.length - i; j++) {
+                if (arr[j] > arr[j+ 1]) {
+                  var temp = arr[j];
+                  arr[j] = arr[j + 1];
+                  arr[j + 1] = temp;
+                }
+              }
+            }
+            return arr;
+      }
+      console.log( sortArray ([10,20,40,100,30,50,90,80,60,77]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 2. 写一个函数，求任意两个不同数字的最大值，并能返回运算后的结果
+
+      //   function max(a, b) {
+      //     return a > b ? a : b;
+      //   }
+      //   var x = max(Number(prompt("请输入数字1")), Number(prompt("请输入数字2")));
+      //   alert("最大值是" + x);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 3.写一个函数，实现任意数的阶乘，并返回值。（如：3的阶乘， 1x2x3）【作业】
+
+      // function factorial (num) {
+      //     var result = 1;
+      //     for (var i = 1;i<=num;i++) {
+      //         result*=i;
+      //     }
+      //     return result;
+      // }
+      // alert(factorial (3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 4.写一个函数，判断一个数是否是素数，并返回结果true 或 false(又叫质数，只能被1和自身整数的数)  【作业】
+
+      // function isPrimeNumber (num) {
+      //     for (i = 2;i < num;i++) {
+      //         if (num%i == 0) {
+      //             return false;
+      //         }
+      //     }
+      //     return true;
+      // }
+      // var result = isPrimeNumber (parseInt(prompt("请输入数字")));
+      // alert(result);
+
+
+
+
+
+
+
+
+
+
+
+      // 5.写一个函数，计算任意两个数字的任意算术运算（简单的计算器小功能），并能返回运算后的结果。
+
+      // function calculator(num1, num2, sign) {
+      //   var result = 0;
+      //   switch (sign) {
+      //     case "+":
+      //       result = num1 + num2;
+      //       break;
+      //     case "-":
+      //       result = num1 - num2;
+      //       break;
+      //     case "*":
+      //       result = num1 * num2;
+      //       break;
+      //     case "/":
+      //       result = num1 / num2;
+      //       break;
+      //     case "%":
+      //       result = num1 % num2;
+      //       break;
+      //   }
+      //   return result;
+      // }
+      // alert(calculator(5, 9, '+'));
+
+// 函数中嵌套循环结构或者分支结构
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 6.任意两数字的和
+
+      // function getSum (x,y) {
+      //     return x + y;
+      // }
+      // console.log(getSum(10,20));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //7.  1-100的和
+
+      // function getEverySum () {
+      //     var sum = 0;
+      //     for(var i = 0;i <= 100;i++) {
+      //         sum = sum + i;
+      //     }
+      //     return sum;
+      // }
+      // console.log(getEverySum());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //8.n-m的和
+
+      // function getEverySum (n,m) {
+      //     var sum = 0;
+      //     for(var i = n;i <= m;i++) {
+      //         sum = sum + i;
+      //     }
+      //     return sum;
+      // }
+      // console.log(getEverySum(1,100));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 9.圆的面积
+
+      // function getS (r) {
+      //     return Math.PI * r * r;
+      // }
+      // console.log(getS(10));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //10. 求一组数字中最大值
+
+      //   function getArrayMax(array) {
+      //     var max = array[0];
+      //     for (var i = 0; i < array.length; i++) {
+      //       if (max < array[i]) {
+      //         max = array[i];
+      //       }
+      //     }
+      //     return max;
+      //   }
+      //   var arr = [10, 20, 30, 40, 50];
+      //   var max = getArrayMax(arr);
+      //   console.log(max);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 11.一组数据的和
+
+      // function getArraySum (array) {
+      //     var sum = 0;
+      //     for (var i = 0;i< array.length;i++) {
+      //         sum+=array[i];
+      //     }
+      //     return sum;
+      // }
+      // console.log(getArraySum([1,2,3,4,5,6]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 12.求数组中最大，最小，和
+
+      // function getArrayMaxAndMinAndSum (array) {
+      //     var max = array[0];
+      //     var min = array[0];
+      //     var sum = 0;
+      //     for (var i = 0;i < array.length;i++) {
+      //         sum+=array[i];
+      //         if (max>array[i]) {
+      //             max = array[i];
+      //         }
+      //         if (min < array[i]) {
+      //             min = array[i];
+      //         }
+      //     }
+      //     var arr = [max,min,sum];
+      //     return arr;
+      // }
+      // var resultArray = getArrayMaxAndMinAndSum ([1,2,3,4,5,6])
+      // console.log('最大值'+resultArray[0]);
+      // console.log('最小值'+resultArray[1]);
+      // console.log('和'+resultArray[2]);
+
+      // 将结果输出为一个数组
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 13.三个数中最大值
+      // function getThreeMax (a,b,c) {
+      //     return a>b?(a>c?a:c):(b>c?b:c);
+      // }
+      // console.log(getThreeMax (10,30,20));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 14.函数数组反转
+
+      // function reverseArray (arr) {
+      //     for (var i = 0;i < arr.length/2;i++) {
+      //         var temp = arr[i];
+      //         arr[i] = arr[arr.length- 1 -i];
+      //         arr[arr.length- 1 -i] = temp;
+      //     }
+      //     return arr;
+      // }
+      // console.log(reverseArray ([1,2,3,4,5,6,7]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // 15.求一个斐波那契数列  1 1 2 3 5 8 13 21
+      // function getFib (num) {
+      //     var num1 = 1;
+      //     var num2 = 1;
+      //     var sum = 0;
+      //     for (var i = 3;i<=num;i++) {
+      //         sum = num1 + num2;
+      //         num1 = num2;
+      //         num2 = sum;
+      //     }
+      //     return sum;
+      // }
+      // alert(getFib (12));
+
+// 参数初始值
+
+
+
+
+
+
+
+
+
+
+      // 16.输入年月日，获取这是这一年的第几天
+    </script>
+  </head>
+  <body></body>
+</html>
