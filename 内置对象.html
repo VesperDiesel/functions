@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    // 封装一个函数，实现格式化日期。 如： 2018年10月10日 12点12分12秒
+
+
+  /*   function dateFormat(date) {
+      var year = date.getFullYear();  // 获取年份
+      var month = date.getMonth() + 1;    // 获取月份   0-11
+      month = month < 10 ? '0' + month : month;
+      var day = date.getDate();       // 获取日期
+      day = day < 10 ? '0' + day : day;
+      var hours = date.getHours();    // 获取小时
+      hours = hours < 10 ? '0' + hours : hours;
+      var minutes = date.getMinutes();    // 获取分钟
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      var seconds = date.getSeconds();    // 获取秒
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+
+      var dateStr = year + '年' + month + '月' + day + '日 ' + hours + '点' + minutes + '分' + seconds + '秒';
+      return dateStr;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 用函数封装一个功能，实现两个日期的时间差。  两个时间相差多少小时 零多分钟  零多少秒
+
+ /*    function dateDiff(start,end) {
+      var temp = end - start;
+      // 小时
+      var hours = parseInt(temp / 1000 / 60 / 60);
+      // 分钟
+      var minutes = parseInt(temp / 1000 / 60 % 60);
+      // 秒
+      var seconds = parseInt(temp / 1000 % 60);
+      var str = hours + ':' + minutes + ':' + seconds;
+      // 返回
+      return str;
+    }
+
+    var s = new Date();
+    var e = new Date(2019,3,4,12,12,12);
+    var r = dateDiff(s,e);
+    document.write(r); */
+
+
+
+
+
+
+
+
+
+
+
+    // 1. 给一个数字数组，统计公司员工薪资，计算公司中薪资大于20000元的人的个数。
+
+
+
+
+
+
+
+
+
+
+
+    // 2. 给一个数字数组，统计公司员工薪资，计算公司员工是否每一个人的薪资都超过5000。
+    // 3. 给一个数字数组，统计公司员工薪资，计算公司员工是否含有薪资超过5000的人。
+    // 4. 给一个数字数组，统计公司员工薪资，给每一位员工的薪资翻3倍。
+    // 5. 学生名单简易管理系统【不用考虑重名】
+    // var stuSystem = {
+    //   // 查看列表
+    //   find: function () {
+    //     alert(arr);
+    //   },
+    //   // 添加
+    //   add: function () {
+    //     // 添加新名
+    //     // 请输入新的名字
+    //     var newName = prompt('请输入新的名字');
+    //     // 检测名字在数组中的位置
+    //     var index = arr.indexOf(newName);
+    //     // 判断
+    //     if (index == -1) {
+    //       arr.unshift(newName);
+    //       alert('添加成功!')
+    //     } else {
+    //       alert(newName + '已经存在,添加失败！');
+    //     }
+    //   },
+    //   // 修改
+    //   update: function () {
+    //     // 请输入要修改的名字
+    //     var newName = prompt('请输入修改人的名字');
+    //     // 检测名字在数组中的位置
+    //     var index = arr.indexOf(newName);
+    //     // 判断
+    //     if (index == -1) {
+    //       alert(newName + '不存在，无法修改！')
+    //     } else {
+    //       arr[index] = prompt('请输入修改后的名字');
+    //       alert('修改成功！');
+    //     }
+    //   },
+    //   del: function () {
+    //     // 删除
+    //     var newName = prompt('请输入要删除的名字');
+    //     // 检测名字在数组中的位置
+    //     var index = arr.indexOf(newName);
+    //     // 判断
+    //     if (index == -1) {
+    //       alert(newName + '不存在，无法删除！')
+    //     } else {
+    //       arr.splice(index, 1);
+    //       alert('删除成功！');
+    //     }
+    //   }
+    // };
+
+    // // 在循环中-显示弹出界面
+    // while (true) {
+      // 接收用户的输入
+    //   var num = prompt(str);
+    //   // 检测操作情况
+    //   if (num == 0) {
+    //     break;
+    //   } else if (num == 1) {
+    //     // 学生系统.find()
+    //     stuSystem.find();
+    //   } else if (num == 2) {
+    //     // 学生系统.add()
+    //     stuSystem.add();
+
+    //   } else if (num == 3) {
+    //     // 学生系统.update()
+    //     stuSystem.update();
+
+    //   } else if (num == 4) {
+    //     // 学生系统.del()
+    //     stuSystem.del();
+
+
+
+    //   }
+    // }
+    // 1  将一个字符串中 '张三|李四|王五|赵六|陈七'  的名字存放到一个数组中。
+
+    // 2  截取字符串"我爱中华人民共和国"，中的"中华"
+    // var str = "我爱中华人民共和国";
+    // var r = str.slice(2,4);
+    // alert(r);
+
+    // 3  把字符串 '你真棒,棒棒哒' 中的所有‘棒’字符，改为 ‘牛’ 
+    // var str = "你真棒,棒棒哒";
+    // var newStr = str.replace('棒','牛');
+    // alert(newStr);
+
+    // 4  字符串 ‘无敌是多么寂寞，无敌是多么空虚，无敌是多么的冷，无敌是多么的...’，用程序统计无敌在字符串中出现的次数。
+
+
+
+    // 5  字符串 ‘https://www.jd.com/index.html?userName=张三&pwd=123456&id=123456’ 把地址?后面的参数提取出来存放到一个对象中   如：{userName:’张三’,pwd:’123456’,id=’123456’}
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

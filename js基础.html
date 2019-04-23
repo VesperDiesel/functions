@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+  
+        // 练习1：给一个数字，判断一个数是偶数还是奇数。
+          // var num = 9;
+          //   或者
+          // var num = parseInt(prompt("请输入数字"));
+          // if (num%2 == 0) {
+          //     console.log("偶数");
+          // 或者
+          // console.log(num + "是偶数")
+          // }else {
+          //     console.log("奇数");
+          // }
+
+
+
+
+
+
+
+
+
+
+          // 练习2：给两个不同数，求两个数的最大数
+          // var num1 = 10;
+          // var num2 = 20;
+          // if (num1 > num2) {
+          //     console.log(num1);
+          // }
+          // else {
+          //     console.log (num2);
+          // }
+
+
+
+
+
+
+
+
+          // 练习3：给三个不同的数字，求三个数字的最大数
+          // var a = 2;
+          // var b = 1;
+          // var c = 9;
+          // if (a >= b && a >= c) {
+          //   console.log(a);
+          // } else if (b >= a && b>=c ) {
+          //   console.log(b);
+          // } else if (c >= a && c>=b ) {
+          //   console.log(c);
+          // }
+
+          // 三元表达式
+          // var a = 10,b = 30, c = 20;
+          // var r = a>b?(a>c?a:c):(b>c?b:c);
+          // console.log(r);
+
+          // if-else
+          // var a = 2;
+          // var b = 1;
+          // var c = 9;
+          // if (a>=b) {
+          //   if (a>=c) {
+          //     console.log(a);
+          //   } else {
+          //     console.log(b);
+          //   }
+          // }else {
+          //   if (b>=c) {
+          //     console.log(b);
+          //   }else {
+          //     console.log(c);
+          //   }
+          // }
+
+          // 弹窗
+          var flag = true;
+          do {
+            var a = Number(prompt('请输入数字'));
+            var b = Number(prompt('请输入数字'));
+            var c = Number(prompt('请输入数字'));
+            if (isNaN(a) && isNaN(b) && isNaN(c)) {
+              alert('请输入数字');
+            } else {
+              flag = false;
+            }
+          }
+          while (flag);
+          if (a >= b) {
+            if (a >= c) {
+              console.log(a);
+            } else {
+              console.log(b);
+            }
+          } else {
+            if (b >= c) {
+              console.log(b);
+            } else {
+              console.log(c);
+            }
+          }
+
+
+
+
+
+
+
+
+
+
+      // 练习4：给一个数字年份，判断一个年份是闰年还是平年。闰年：能被4整除，但不能被100整除的年份 或者 能被400整除的年份
+      // var year = 2019;
+      // if (year%4 == 0 && year%100 != 0 || year%400 == 0) {
+      //     console.log("闰年");
+      // } else {
+      //     console.log("平年");
+      // }
+
+
+
+
+
+
+
+
+
+
+
+
+        //练习5 分数转换，把百分制转换成ABCDE   <60  E  60-70 D  70-80 C  80-90 B  90 - 100 A
+          // var score = 90;
+          // 或者
+      //   var score = parseInt(prompt("请输入分数"));
+      //   if (!isNaN(score)) {
+      //     if (score > 90 && score <= 100) {
+      //       console.log("A级");
+      //     } else if (score > 80) {
+      //       console.log("B级");
+      //     } else if (score > 70) {
+      //       console.log("c级");
+      //     } else if (score >= 60) {
+      //       console.log("D级");
+      //     } else {
+      //       console.log("E级");
+      //     }
+      //   }else {
+      //       console.log("您输入有误");
+      //   }
+
+// 用一个外层限制条件嵌套分支语句
+
+
+
+
+
+
+
+
+      // 练习6：给一个数字月份，返回当前月份是哪个季节。（3、4、5是春，6、7、8是夏，9、10、11是秋，12、1、2是冬）
+      // var month = parseInt(prompt("请输入月份"));
+      // if (!isNaN(month)) {
+      //   if (month >= 3 && month<=5) {
+      //     console.log("春季");
+      //   } else if ( month >= 6 && month <= 8) {
+      //     console.log("夏季");
+      //   } else if ( month >= 9 && month <= 11) {
+      //     console.log("秋季");
+      //   } else if ( month = 12 && month <= 2 && month > 0) {
+      //     console.log("冬季");
+      //   } else {
+      //       console.log("您输入有误");
+      //   }
+      // }
+
+
+
+
+
+
+
+
+
+      // 练习7：接收班长口袋里的钱数？若大于等于2000，请大家吃西餐。若小于2000，大于等于1500，请大家吃快餐。若小于1500，大于等于1000，请大家喝饮料。若小于1000，大于等于500，请大家吃棒棒糖。否则提醒班长下次把钱带够
+
+        // var money = parseInt(prompt("请输入钱数"));
+        // if (money > 2000 ) {
+        //   console.log("西餐");
+        // } else if (money >= 1500) {
+        //   console.log("快餐");
+        // } else if (money >= 1000) {
+        //   console.log("饮料");
+        // } else if (money >= 500) {
+        //   console.log("棒棒糖");
+        // } else {
+        //   console.log ("下次把钱带够");
+        // }
+
+
+
+
+
+
+
+
+
+//         var num = 1;
+// switch(num) {
+//      case 1:
+//     	alert('星期一');
+//     	break;
+//      case 2:
+//     	alert('星期二');
+//     	break;
+//      case 3:
+//     	alert('星期三');
+//     	break;
+//      case 4:
+//     	alert('星期四');
+//     	break;
+//      case 5:
+//     	alert('星期五');
+//     	break;
+//      case 6:
+//      case 7:
+//     	alert('周末双休');
+//     	break;
+// }
+    </script>
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

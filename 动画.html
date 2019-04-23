@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: red;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">正方向运动</button>
+    <button id="btn2">反方向运动</button>
+    <div></div>
+    <script>
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var box = document.querySelector('div');
+        var timer;
+
+        function move(box, targetValue, speed) {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                var v = box.offsetLeft;
+                // 当box运动到目标值时停止计时器
+                if (v == targetValue) {
+                    clearInterval(timer);
+                    return;
+                }
+                // 当目标值与box.offsetLeft的绝对值小于速度时，box直接到目标位置
+                if (Math.abs(targetValue - v) < speed) {
+                    box.style.left = targetValue + 'px';
+                } else {
+                    // 目标值大于box.offsetLeft时正向运动
+                    if (targetValue - v > 0) {
+                        v = v + speed;
+                    } else {
+                        // 目标值小于box.offsetLeft时反向运动
+                        v = v - speed;
+                    }
+                    // 将v的值赋给box.style.left
+                    box.style.left = v + 'px';
+                }
+            }, 10);
+        };
+        btn1.onclick = function () {
+            move(box, 1000, 10);
+        };
+        btn2.onclick = function () {
+            move(box, 0, 10);
+        };
+    </script>
+</body>
+
+</html>

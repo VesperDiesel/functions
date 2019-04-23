@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* div {
+        width: 500px;
+        height: 500px;
+        background: #000;
+        color: gold;
+        margin: 0 auto;
+        font: bold 100px/500px "微软雅黑";
+        text-align: center;
+      } */
+    </style>
+    <script>
+      //   var userNames = [
+      //     "a",
+      //     "b",
+      //     "c",
+      //     "d",
+      //     "e",
+      //     "f",
+      //     "g",
+      //     "h",
+      //     "i",
+      //     "j",
+      //     "k",
+      //     "l",
+      //     "m",
+      //     "n",
+      //     "o",
+      //     "p",
+      //     "q",
+      //     "r",
+      //     "s",
+      //     "t",
+      //     "u",
+      //     "v",
+      //     "w",
+      //     "x",
+      //     "y",
+      //     "z"
+      //   ];
+      //   var i = parseInt(Math.random() * userNames.length);
+      //   document.write("<div>" + userNames[i] + "</div>");
+
+
+
+
+
+
+
+      // function randomNum(minNum, maxNum) {
+      //   switch (
+      //     arguments.length //根据函数参数来生成不同的随机数
+      //   ) {
+      //     case 1:
+      //       return parseInt(Math.random() * minNum + 1, 10);
+      //       break;
+      //     case 2:
+      //       return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
+      //       break;
+      //     default:
+      //       return 0;
+      //       break;
+      //   }
+      // }
+      // //得到一个两数之间的随机整数，包括两个数在内
+      // function getRandom(min, max) {
+      //   min = Math.ceil(min);
+      //   max = Math.floor(max);
+      //   return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+      // }
+      // var r = getRandom(0, 3);
+      // console.log(r);
+   
+
+
+
+  //  function getMax(max) {
+  //    max = Math.max(0,1,2);
+  //    return max;
+  //  }
+  //  var r = getMax()
+  //  alert(r);
+
+
+
+
+
+
+
+
+
+
+
+      // var obj = { userName: "张三", age: 10 };
+      // function fn(obj2) {
+      //   obj2.age = 18;
+      // }
+      // fn(obj);
+      // console.log(obj.age);
+
+      // var num1 = 10;
+      // var num2 = 20;
+      // function fn(x, y) {
+      //   x = 100;
+      //   y = 200;
+      // }
+      // fn(num1, num2);
+      // console.log(num1);
+      // console.log(num2);
+
+      //   用数据写出5个学生的信息（姓名、年龄、学号、性别、会编程、唱歌、会自我介绍），用自定义构造函数并创建对象并调用自我介绍 、编程、唱歌功能。
+
+        function Student(name, age, number, gender) {
+          (this.name = name),
+            (this.age = age),
+            (this.number = number),
+            (this.gender = gender),
+            (this.programme = function() {
+              alert("programme");
+            }),
+            (this.sing = function() {
+              alert("sing");
+            }),
+            (this.introduce = function() {
+              alert("introduce");
+            });
+        }
+        var Student1 = new Student("abby", "20", "01", "female");
+      //   Student1.programme();
+      //   Student1.sing();
+      //   Student1.introduce();
+        for (var key in Student1) {
+         alert(Student1[key]);
+        }
+    </script>
+  </head>
+  <body></body>
+</html>

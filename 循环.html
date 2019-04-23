@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+            //1. 求1-100之间所有数的总和 与 平均值          5050 50.5
+
+      // while循环
+              // var i = 1;
+              // var sum = 0;
+              // while(i <=100) {
+              //   sum = sum +i;
+              //   i++;
+              // }
+              // console.log (sum);
+              // console.log(sum / 100);
+      // for循环
+              // var sum = 0;
+              // for (var i = 1;i <= 100;i++) {
+              //   sum = sum + i;
+              // }
+              // console.log (sum);
+              // console.log(sum / 100);
+
+// 循环必要元素，循环体，计数器
+
+
+
+
+
+            // 2.求1-100之间所有偶数的和       2550
+
+            //   var i = 0;
+            //   var sum = 0;
+            //   while (i <= 100) {
+            //     if (i%2 == 0) {
+            //       sum = sum + i;
+            //     }
+            //       i++;
+            //   }
+            //   console.log(sum);
+// 计数器在while循环体中
+
+
+
+
+
+
+            // 3.求100以内 7的倍数的总和     735
+
+            //   var i = 0;
+            //   var sum =0;
+            //   while (i <= 100) {
+            //       if (i%7 ==0) {
+            //           sum = sum + i;
+            //       }
+            //           i++;
+            //   }
+            //   console.log(sum);
+
+
+
+
+
+
+
+            // 4.循环实现打印矩形  document.write(“☆”);
+
+            // for (var i = 1;i <= 5; i++) {
+            //   for (var j = 1;j <= 5; j++) {
+            //   document.write("☆");
+            //   }
+            // document.write("<br />");
+            // }
+
+            //   把画一行星星当作循环体
+            // 换行 <br>
+
+
+
+
+
+
+
+
+
+
+
+            // 5.循环实现打印直角三角形;
+
+            // for (var i = 0;i < 5; i++) {
+            //     for (var j = 0;j <= i;j++) {
+            //       document.write("☆");
+            //     }
+            //     document.write("<br />");
+            // }
+            // 倒三角
+            // for ( var i = 5;i >= 1;i--) {
+            //   for (var j = 1;j <= i;j++) {
+            //       document.write("☆");
+            //     }
+            //     document.write("<br />");
+            // }
+
+      // 外层循环，行数重复
+      // 内层循环，次数重复
+
+
+
+
+
+
+
+
+
+
+            // 6.循环实现打印九九乘法表
+
+            // for (var i = 1; i <= 9; i++) {
+            //   for (var j = 1; j <= i; j++) {
+            //     document.write("&nbsp;&nbsp;&nbsp;&nbsp;"+i + " * " + j + " = " + i * j);
+            //   }
+            //   document.write("<br />");
+            // }
+
+
+
+
+
+
+
+
+
+
+            // 7.接收用户输入的用户名和密码，若用户名为 “admin” ,密码为 “123456” ,提示用户登录成功!  否则，让用户是指输入正确为止！
+
+            // var userName = prompt ("请您输入账号");
+            // var userPwd = prompt ("请您输入密码");
+            // while (userName != "admin" || userPwd != "123456") {
+            //     userName = prompt ("请您输入账号");
+            //     userPwd = prompt ("请您输入密码");
+            // }
+            // alert ("登录成功");
+
+            // while (true) {
+            //   var userName = prompt ("请您输入账号");
+            //   var userPwd = prompt ("请您输入密码");
+            //    if (userName == "admin" && userPwd == "123456") {  
+            //     alert ("登录成功");
+            //     break;
+            //   } else {
+            //      alert ("登录失败！用户名或密码错误！请重新登录");
+            //   }
+            // }
+
+// 不确定循环次数，用while循环
+
+
+
+
+            // 8.求整数1～100的累加值，但要求碰到个位为3的数则停止累加（用break实现）【作业】      3
+
+            //       var sum=0;
+            //     for(var i=0;i<=100;i++) {
+            //        if (i%10 == 3) {
+            //            break;
+            //        }
+            //         sum =sum +i;
+            //    }
+            //        console.log(sum);
+// 在for循环体中嵌套一个if条件分支语句
+
+
+
+
+
+            // 9.求整数1～100的累加值，但要求跳过所有个位为3的数【作业】【用continue实现】      4570
+            //       var sum=0;
+            //     for(var i=0;i<=100;i++) {
+            //        if (i%10 == 3) {
+            //           continue;
+            //        }
+            //         sum =sum +i;
+            //    }
+            //        console.log(sum);
+
+// 不用continue
+            // var sum = 0;
+            // for (var i=0;i<=100;i++) {
+            //   if (i%10 != 3) {
+            //     sum = sum + i;
+            //   }
+            // }
+            //  console.log(sum);
+
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

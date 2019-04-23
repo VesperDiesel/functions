@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 分支语句
+    //1，三个数比较最大值
+    //prompt接受是字符串类型
+    //字符串有自己的比较规则
+    // 永远不要相信用户的输入
+    // var a = Number(prompt('请输入数字'));
+    // var b = Number(prompt('请输入数字'));
+    // var c = Number(prompt('请输入数字'));
+    // NaN非数字
+    // if (isNaN(a) && isNaN(b) && isNaN(c)) {
+    //   console.log('请重新输入')
+    // } else {
+    //   if (a >= b) {
+    //     //则证明a牛逼
+    //     if (a >= c) {
+    //       console.log(a + '最大');
+    //     } else {
+    //       console.log(c + '最大');
+    //     }
+    //   } else {
+    //     //则证明b牛逼
+    //     if (b >= c) {
+    //       console.log(b + '最大');
+    //     } else {
+    //       console.log(c + '最大');
+    //     }
+    //   }
+    // }
+
+    //2，判断闰年
+    // 能被4整除并且不能被100整除的 或者 能被400整除的
+    // num%4 == 0 && num%100!=0 || num%400 ==0
+    //3，switch
+    // var num = '1';
+    // switch (key) {
+    //   case 1:
+
+    //     break;
+
+    //   default:
+    //     break;
+    // }
+    // if(60<=num<80){
+
+    // }
+    //循环语句
+    // for (let index = 0; index < array.length; index++) {
+    //   const element = array[index];
+    //   if(){
+    //     continue;
+    //   }s
+    // }
+    // while (condition) {
+
+    // }
+    // do {
+
+    // } while (condition);
+    // 循环三要素
+    // 1.循环初始值
+    // 2.循环条件
+    // 3.循环体
+    // break;
+    // continue;
+    //1，一个数组中的最大值
+    // var arr = [2,33,23,45,1,0];
+    // var maxNum = arr[0];
+    // for (let i = 1; i < arr.length; i++) {
+    //   if(maxNum<arr[i]){
+    //     maxNum = arr[i];
+    //   }
+    // }
+    // console.log(maxNum);
+
+    //  else {
+
+    // var flag = true;
+    // do {
+    //   var a = Number(prompt('请输入数字'));
+    //   var b = Number(prompt('请输入数字'));
+    //   var c = Number(prompt('请输入数字'));
+    //   if (isNaN(a) && isNaN(b) && isNaN(c)) {
+    //     alert('请输入数字')
+    //   }else{
+    //     flag = false;
+    //   }
+    // } while (flag);
+    // var arr = [2,33,23,45,1];
+    // var newArr = [];
+    // 2  [0] => 2 [length-1]
+    // 33 [1] => 33[length-2]
+    // 23 [2] => 23 [length-3]
+    // 45 [3] => 45 [length-4]
+    // 1 [4] => 1 [length-5]
+    // for (let i = 0; i < arr.length; i++) {
+    //     newArr[arr.length-i-1] = arr[i];
+    // }
+    // console.log(newArr);
+  </script>
+</body>
+
+</html>
